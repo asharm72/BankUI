@@ -7,7 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AccountOpenController {
 	
 	@RequestMapping("/")
-	public String sayHello() {
+	public String accountOpen() {
+		return "account_open";
+	}
+	
+	@RequestMapping("/login")
+	public String showScreen() {
 		return "account_open";
 	}
 
