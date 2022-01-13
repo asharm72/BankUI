@@ -47,7 +47,22 @@
       </ul>
       <form class="d-flex">
          
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Login</button>
+        
+        <%
+        String username = (String)session.getAttribute("username"); 
+         
+         if(username == null){
+        	%>
+        	<a class="btn btn-danger my-2 my-sm-0" href="${pageContext.request.contextPath }/login">Login</a>
+        	 
+        <% 	 
+        }else{
+        	%>
+        	<span style="font-family: monospace; color: white; font-weight: bold; font-size:x-large; ">Welcome <%=username %></span> 
+        	&nbsp;&nbsp;&nbsp; <a class="btn btn-warning my-2 my-sm-0" href="${pageContext.request.contextPath }/logout">Logout</a>
+        	<%
+        }
+       %>  
       </form>
     </div>
   </div>

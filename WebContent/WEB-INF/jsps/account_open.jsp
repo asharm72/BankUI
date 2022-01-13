@@ -63,7 +63,7 @@
 							<label for="exampleInputEmail1" class="form-label mt-4">Username</label>
 							<sf:input type="text" class="form-control"
 								id="exampleInputEmail1" aria-describedby="emailHelp"
-								placeholder="Enter your username" path="userInfo.userName" />
+								placeholder="Enter your username" path="userInfo.username" />
 
 						</div>
 
